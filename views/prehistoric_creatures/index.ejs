@@ -1,0 +1,11 @@
+<form method="GET" action="/prehistoric_creatures">
+    <label for="nameFilter">Filter by Name:</label>
+    <input id= "nameFilter" type="text" name= "nameFilter">
+    <input type="submit">
+</form>
+
+<ul>
+    <% myPreCre.forEach((preCre)=>{ %>
+        <h3><%= preCre.name %> looks like this:  </h3> <img src="<%= preCre.img_url %> " alt="precre">
+    <% }) %> 
+</ul>
